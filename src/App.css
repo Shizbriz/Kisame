@@ -1,0 +1,9 @@
+.App{
+  text-align: center;
+}
+.nav{
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 50px;
+  background: linear-gradient(90deg, black, yellow, grey);
+}

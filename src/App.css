@@ -1,8 +1,15 @@
+body{
+  background: linear-gradient(45deg, rgb(100, 100, 128), rgba(255, 255, 255, 0.712));
+}
 .nav{
   display: flex;
   justify-content: space-between;
   padding: 10px 50px;
-  background: linear-gradient(90deg, black, yellow, grey);
+  background: black;
+  
+}
+.nav a{
+  color: white;
 }
 .name{
   font-size: 30px;
@@ -16,11 +23,13 @@ hr{
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  background: linear-gradient(45deg, grey white);
 }
 ul{
   box-shadow: 2px 2px 5px 1px black;
 margin: 20px;
 padding: 20px;
+
 }
 li{
   list-style: none;

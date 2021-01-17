@@ -65,10 +65,19 @@ render(){
           <li className="name"> {record.FirstName} {record.LastName}</li>
           <hr></hr>
           <li> <b>Gender:</b> {record.Gender} </li>
-          <li> <b>Location:</b> {record.Latitude}, {record.Latitude} </li>
-       
+          <li> <b>Location:</b> {record.Latitude}, {record.Longitude} </li>
+          <li> <b>Card Details:</b> {record.CreditCardType} {record.CreditCardNumber} </li>
+          <li> <b>Email:</b> <a href={record.Email}> {record.Email}</a> </li>
+          <li> <b>Domain:</b> <a href={record.DomainName}>{record.DomainName}</a> </li>
+          <li> <b>Phone Number:</b> {record.PhoneNumber} </li>
+          <li> <b>Mac Address:</b> {record.MacAddress} </li>
+          <li> <b>URL:</b> <a href={record.URL}> {record.URL}</a> </li>
+          <li> <b>UserName:</b> {record.UserName} </li>
+          <li> <b>Last Login:</b> {record.LastLogin} </li>
+          <li> <b>Payment Method:</b> {record.PaymentMethod} </li>
         </ul>
         ))
+        
         }
       
       </div>

@@ -1,9 +1,28 @@
-.App{
-  text-align: center;
-}
 .nav{
   display: flex;
   justify-content: space-between;
   padding: 10px 50px;
   background: linear-gradient(90deg, black, yellow, grey);
+}
+.name{
+  font-size: 30px;
+  font-weight: 500;
+  text-align: center;
+}
+hr{
+  margin-bottom: 20px;
+}
+.profiles{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+ul{
+  box-shadow: 2px 2px 5px 1px black;
+margin: 20px;
+padding: 20px;
+}
+li{
+  list-style: none;
+  width: 250px;
 }

@@ -28,15 +28,18 @@ constructor(props){
   
 componentDidMount(){
   fetch("https://api.enye.tech/v1/challenge/records")
-  .then(response => response.json())
+  .then(response=>{
+ return  response.json()})
   .then(
     (result)=> {
+      console.log(result)
       this.setState({
         isLoaded: true,
         records: result.records
       });
     },
     (error)=>{
+      console.log(error)
       this.setState({
         isLoaded: true,
         error
@@ -55,14 +58,21 @@ render(){
   }
   else {
     return(
-      <ul>
+      <div className="profiles">
+ 
         {
-          records.map(record=> (<li key={record.index}>
-      {record.records} {record.status} {record.size}
-        </li>
+          records.profiles.map(record=> (<ul key={record.index}>
+          <li className="name"> {record.FirstName} {record.LastName}</li>
+          <hr></hr>
+          <li> <b>Gender:</b> {record.Gender} </li>
+          <li> <b>Location:</b> {record.Latitude}, {record.Latitude} </li>
+       
+        </ul>
         ))
         }
-      </ul>
+      
+      </div>
+     
     );
   }
 }
